@@ -14,25 +14,7 @@
         <b-col md="2" class="sidebar px-0">
           <b-nav vertical>
             <b-nav-item>
-              <b-link to="/inicio">Inicio</b-link>
-            </b-nav-item>
-            <b-nav-item>
-              <b-link to="/main">Main</b-link>
-            </b-nav-item>
-            <b-nav-item>
-              <b-link to="/tercero">Tercero</b-link>
-            </b-nav-item>
-            <b-nav-item>
-              <b-link to="/LandsPage">Landspage</b-link>
-            </b-nav-item>
-            <b-nav-item>
-              <b-link to="/formularioUsuario">Formulario Usuario</b-link>
-            </b-nav-item>
-            <b-nav-item>
               <b-link to="/peliculas">Peliculas</b-link>
-            </b-nav-item>
-            <b-nav-item>
-              <b-link to="/dragndrop">DragNDrop</b-link>
             </b-nav-item>
           </b-nav>
         </b-col>
