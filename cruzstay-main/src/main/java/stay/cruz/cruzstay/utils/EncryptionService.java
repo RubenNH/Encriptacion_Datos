@@ -8,6 +8,13 @@ import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
+/*
+ Este es un servicio de encriptación que utiliza el algoritmo AES para encriptar y desencriptar datos.
+ Para encriptar un dato, se utiliza el método encrypt, que recibe un String y devuelve un String encriptado.
+    Para desencriptar un dato, se utiliza el método decrypt, que recibe un String encriptado y devuelve el String original.
+    El algoritmo y la transformación utilizada son AES y AES/ECB/PKCS5Padding respectivamente.
+    La clave secreta utilizada para encriptar y desencriptar los datos se obtiene de la variable de entorno SECRET_KEY.
+*/
 @Service
 public class EncryptionService {
     private static final String ALGORITHM = "AES";

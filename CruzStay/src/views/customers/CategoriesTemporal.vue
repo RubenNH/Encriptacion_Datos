@@ -1,3 +1,20 @@
+<!-- 
+    Este archivo es el encargado de mostrar las categorías de los productos, permitiendo crear, editar y cambiar el estado de las categorías. 
+    Se hace uso de la librería de BootstrapVue para mostrar la tabla de categorías y los formularios para crear y editar categorías.
+    Se hace uso de la librería de Axios para realizar las peticiones HTTP.
+    Se hace uso de la librería de EncryptionService para encriptar y desencriptar los datos.
+    La uttima es un archivo propio que permite obtener la clave secreta para encriptar y desencriptar los datos.
+    La clave secreta es almacenada en un almacenador de la librería de Pinia.
+    Se hace uso de la librería de Pinia para almacenar la clave secreta.
+
+    Cuando importamos useSecret de "@/stores/key" estamos importando el almacenador de la clave secreta.
+    con ella podemos mandar la llave a los metodos de encriptacion y desencriptacion. que retornan la clave encriptada o desencriptada.
+
+    En el metodo getCategories() se hace una peticion GET a la API de categorias, se obtiene la respuesta y se desencripta el campo 'name' de cada categoria.
+    En el metodo createCategory() se encripta el nombre de la categoria y se manda a la API para crear una nueva categoria.
+    En el metodo editCategory() se encripta el id y el nombre de la categoria y se manda a la API para editar una categoria.
+    En el metodo deleteCategory() se encripta el id y el nombre de la categoria y se manda a la API para cambiar el estado de una categoria.
+-->
 <template>
     <b-container>
         <b-row>

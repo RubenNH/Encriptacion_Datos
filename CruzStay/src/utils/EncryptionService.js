@@ -1,3 +1,6 @@
+//servicio de encriptación que utiliza la librería crypto-js, la llave de encriptación es 
+//proporcionada por el servidor y la puedes llamaar con pinia
+
 import CryptoJS from 'crypto-js';
 
 export default class encryptionService {
