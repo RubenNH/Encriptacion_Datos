@@ -1,0 +1,119 @@
+.turquoise{
+    color: #50aca1;
+}
+.bluegreen{
+    color: #68abb0;
+}
+.orangelight{
+    color: #e0c2ac;
+}
+.peach{
+    color: #e99675;
+}
+.pinky{
+    color: #e1335b;
+}
+
+/* Custom button styles using your specified colors */
+.btn-turquoise {
+    background-color: #50aca1;
+    border-color: #50aca1;
+    color: #fff;
+}
+
+.btn-turquoise:hover {
+    background-color: #3c8c82;
+    border-color: #3c8c82;
+    /* Add any additional styles for hover state */
+}
+
+/* on click */
+.btn-turquoise:active {
+    background-color: #3c8c82;
+    border-color: #3c8c82;
+    /* Add any additional styles for active state */
+}
+
+.btn-bluegreen {
+    background-color: #68abb0;
+    border-color: #68abb0;
+    color: #fff;
+}
+
+.btn-bluegreen:hover {
+    background-color: #527e87;
+    border-color: #527e87;
+    /* Add any additional styles for hover state */
+}
+
+.btn-bluegreen:active {
+    background-color: #527e87;
+    border-color: #527e87;
+    /* Add any additional styles for active state */
+}
+
+.btn-orangelight {
+    background-color: #e0c2ac;
+    border-color: #e0c2ac;
+    color: #fff;
+}
+
+.btn-orangelight:hover {
+    background-color: #cba993;
+    border-color: #cba993;
+    /* Add any additional styles for hover state */
+}
+
+.btn-orangelight:active {
+    background-color: #cba993;
+    border-color: #cba993;
+    /* Add any additional styles for active state */
+}
+
+.btn-peach {
+    background-color: #e99675;
+    border-color: #e99675;
+    color: #fff;
+}
+
+.btn-peach:hover {
+    background-color: #d18766;
+    border-color: #d18766;
+    /* Add any additional styles for hover state */
+}
+
+.btn-peach:active {
+    background-color: #d18766;
+    border-color: #d18766;
+    /* Add any additional styles for active state */
+}
+
+.btn-pinky {
+    background-color: #e1335b;
+    border-color: #e1335b;
+    color: #fff;
+}
+
+.btn-pinky:hover {
+    background-color: #c02748;
+    border-color: #c02748;
+    /* Add any additional styles for hover state */
+}
+
+.btn-pinky:active {
+    background-color: #c02748;
+    border-color: #c02748;
+    /* Add any additional styles for active state */
+}
+
+.my-justified-text {
+    text-align: justify;
+}
+
+.btn-big{
+    width: 100%; height: 50px; font-size: 1.5rem; font-weight: bold;
+}
+
+.btn-medium{
+    width: 100%; height: 40px; font-size: 1.1rem; font-weight: bold;
+}
