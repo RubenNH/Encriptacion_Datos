@@ -46,7 +46,7 @@ public class CategoryController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Response<Category>> update( @PathVariable("id") Long id, @RequestBody CategoryDto category) {
+    public ResponseEntity<Response<Category>> update( @PathVariable("id") String id, @RequestBody CategoryDto category) throws Exception {
         return new ResponseEntity<>(
                 this.service.update(id, category.getCategory()),
                 HttpStatus.OK

@@ -61,9 +61,15 @@ public class CategoryService {
     }
 
     @Transactional(rollbackFor = {Exception.class})
-    public Response<Category> update(Long id, Category category){
-        if(this.repository.existsById(id)){
-            category.setId(id);
+    public Response<Category> update(String id, Category category) throws Exception {
+        //decrypt the id and parse it to Long
+        id = encryptionService.decrypt(id);
+        Long idLong = Long.parseLong(id);
+        //tha name comes encrypted, so we need to decrypt it
+        category.setName(encryptionService.decrypt(category.getName()));
+        if(this.repository.existsById(idLong)){
+            category.setId(idLong);
+
             this.repository.saveAndFlush(category);
             return new Response<>(
                 category, false, 200, "Actualizado Correctamente"
@@ -73,6 +79,4 @@ public class CategoryService {
             null, true, 400, "No se encontro la categoria"
         );
     }
-
-
 }
